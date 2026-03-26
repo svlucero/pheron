@@ -2,7 +2,7 @@
 set -e
 
 REPO="svlucero/pheron"
-APP_NAME="pheron"
+APP_NAME="Pheron"
 
 # Detect architecture
 ARCH=$(uname -m)
