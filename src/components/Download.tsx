@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Download as DownloadIcon, Monitor, Terminal, Copy, Check } from "lucide-react";
 
-const INSTALL_CMD = "curl -sSL https://raw.githubusercontent.com/svlucero/AgentCenter/main/install.sh | bash";
+const INSTALL_CMD = "curl -sSL https://raw.githubusercontent.com/svlucero/pheron/main/install.sh | bash";
 
 function useGitHubRelease() {
   const [version, setVersion] = useState("...");
