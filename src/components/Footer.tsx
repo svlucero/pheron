@@ -18,7 +18,7 @@ const links = {
     { label: "About", href: "#" },
     { label: "Blog", href: "https://blog.littlesoft-ai.com/" },
     { label: "Changelog", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Contact", href: "contact@littlesoft-ai.com" },
   ],
 };
 
