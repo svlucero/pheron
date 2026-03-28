@@ -18,7 +18,7 @@ const links = {
     { label: "About", href: "#" },
     { label: "Blog", href: "https://blog.littlesoft-ai.com/" },
     { label: "Changelog", href: "#" },
-    { label : "Contact", href: "mailto:hello@agentcenter.com" }
+    { label: "Contact", href: "mailto:contact@littlesoft-ai.com" },
   ],
 };
 
