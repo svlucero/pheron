@@ -21,16 +21,16 @@ const models = [
 ];
 
 const chatMessages = [
-  { from: "user", text: "Reviewá el PR #88 y decime si está listo para mergear" },
+  { from: "user", text: "Review PR #88 and tell me if it's ready to merge" },
   {
     from: "bot",
-    text: "Revisé el PR #88. Tiene 2 comentarios sin resolver y le falta cobertura de tests en el módulo de auth. Te recomiendo no mergearlo todavía.",
+    text: "Checked PR #88. It has 2 unresolved comments and is missing test coverage in the auth module. I'd hold off on merging for now.",
     model: "Claude",
   },
-  { from: "user", text: "Asigná el issue #102 a Gemini" },
+  { from: "user", text: "Assign issue #102 to Gemini" },
   {
     from: "bot",
-    text: "Listo ✓ Issue #102 asignado a Gemini. Empezará en los próximos minutos.",
+    text: "Done ✓ Issue #102 assigned to Gemini. It will start shortly.",
     model: "Claude",
   },
 ];
@@ -44,18 +44,18 @@ export default function Telegram() {
           <div>
             <div className="inline-flex items-center gap-2 bg-[#6d28d9]/10 text-[#6d28d9] text-sm font-medium px-3 py-1.5 rounded-full mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6d28d9] inline-block" />
-              Nuevo · Integración Telegram
+              New · Telegram Integration
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-gray-900 text-balance mb-6">
-              Chateá con Claude, Gemini o Codex{" "}
-              <span className="text-[#6d28d9]">desde tu celu</span>
+              Chat with Claude, Gemini or Codex{" "}
+              <span className="text-[#6d28d9]">from your phone</span>
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
-              Conectá tu bot de Telegram a AgentCenter y manejá tus agentes
-              desde donde estés. Revisá PRs, asigná issues y chequeá el gasto
-              de tokens — todo desde el chat.
+              Connect your Telegram bot to AgentCenter and manage your agents
+              from anywhere. Review PRs, assign issues, and check token spend
+              — all from chat.
             </p>
 
             {/* Model chips */}
@@ -74,10 +74,10 @@ export default function Telegram() {
             {/* Feature list */}
             <ul className="space-y-3 text-sm text-gray-600">
               {[
-                "Asigná issues a tus agentes con un mensaje",
-                "Recibí notificaciones de PRs y deploys en tiempo real",
-                "Consultá el estado de tus repositorios al instante",
-                "Elegí qué modelo usar para cada tarea",
+                "Assign issues to your agents with a single message",
+                "Get real-time notifications for PRs and deploys",
+                "Query repository status instantly",
+                "Choose which model to use for each task",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <Sparkles className="w-4 h-4 text-[#6d28d9] mt-0.5 shrink-0" />
@@ -139,7 +139,7 @@ export default function Telegram() {
                 {/* Input bar */}
                 <div className="bg-white px-3 py-2 flex items-center gap-2 border-t border-gray-100">
                   <div className="flex-1 bg-gray-100 rounded-full px-3 py-1.5 text-[10px] text-gray-400">
-                    Escribí un comando...
+                    Type a command...
                   </div>
                   <div className="w-6 h-6 rounded-full bg-[#6d28d9] flex items-center justify-center">
                     <MessageCircle className="w-3 h-3 text-white" />
@@ -153,14 +153,14 @@ export default function Telegram() {
                   <span className="text-green-500 text-xs font-bold">✓</span>
                 </div>
                 <div>
-                  <p className="text-[10px] font-semibold text-gray-800">PR #88 revisado</p>
-                  <p className="text-[9px] text-gray-400">por Claude · ahora</p>
+                  <p className="text-[10px] font-semibold text-gray-800">PR #88 reviewed</p>
+                  <p className="text-[9px] text-gray-400">by Claude · just now</p>
                 </div>
               </div>
 
               {/* Floating model badge */}
               <div className="absolute -right-6 bottom-20 bg-white rounded-xl shadow-lg border border-gray-100 px-3 py-2">
-                <p className="text-[9px] text-gray-400 mb-1">Modelo activo</p>
+                <p className="text-[9px] text-gray-400 mb-1">Active model</p>
                 <div className="flex gap-1">
                   {models.map((m) => (
                     <span
