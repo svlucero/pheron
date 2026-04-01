@@ -6,7 +6,6 @@ const links = {
     { label: "Features", href: "#features" },
     { label: "How it works", href: "#how-it-works" },
     { label: "Agents", href: "#agents" },
-    { label: "Pricing", href: "#download" },
   ],
   Developers: [
     { label: "Documentation", href: "#" },
